@@ -1,1 +1,45 @@
+# ChatForge Project: Complete Implementation Code
 
+---
+
+### Phase 1: Project Setup & Supabase Setup
+#### Tailwind Configuration: `tailwind.config.js`
+```javascript
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: "class",
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./ui/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
+
+... (Include all project phases, code snippets, and explanations we created in sequence)
+
+### Phase 8: README
+#### `.env.example`
+```env
+# Supabase
+NEXT_PUBLIC_SUPABASE_URL=<your-supabase-url>
+NEXT_PUBLIC_SUPABASE_ANON_KEY=<your-supabase-anon-key>
+SUPABASE_SERVICE_ROLE_KEY=<your-supabase-service-role-key>
+
+# API Keys
+GROQ_API_KEY=<your-groq-api-key>
+GOOGLE_AI_API_KEY=<your-google-ai-api-key>
+```
+#### Supabase Full Schema
+```sql
+-- schema.sql file goes here
+```
+
+#### Vercel Deployment
+1. Connect GitHub Repository.
+2. Add .env variables to Vercel.
+3. Deploy the application.
